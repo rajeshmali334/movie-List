@@ -8,7 +8,7 @@ function App() {
     <>
       <h1 className="heading">Top Movie List</h1>
       <div className="cards">
-        {data.map((value) => {
+        {data.map((value, index) => {
           return (
             <Card
               key={value.key}
