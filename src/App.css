@@ -1,0 +1,80 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,300&display=swap"); */
+
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-200);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(500%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+body {
+  background-image: url("https://thumbs.gfycat.com/AnyFaithfulHylaeosaurus.webp");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+}
+.heading {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  background: #28282b;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+div.cards {
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  box-shadow: 4px 4px 10px rgb(172, 161, 161);
+  margin: 1rem;
+  background-color: #000109;
+  color: white;
+  padding: 2%;
+  border-radius: 8px;
+}
+.cards img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+.card:hover {
+  box-shadow: 5px 5px 10px rgb(116, 111, 111);
+  position: relative;
+  top: -3px;
+  right: 3px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
